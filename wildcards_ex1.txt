@@ -1,0 +1,9 @@
+#!/bin/bash
+TODAT=$(date +%Y-%m-%d)
+for file in *.jpg;
+do 
+	if [ -f "$file" ]; then
+		mv "$file" "${TODAY}-${file}"
+		echo "Renamed $file to ${TOADY}-${file}"
+	fi
+done
