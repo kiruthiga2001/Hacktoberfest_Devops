@@ -1,0 +1,6 @@
+#!/bin/bash
+file_count() {
+	count=$(ls)
+	echo "There are $count files in present working directory"
+}
+file_count
