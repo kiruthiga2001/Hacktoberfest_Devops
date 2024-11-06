@@ -1,0 +1,13 @@
+#!/bin/bash
+read -p "Enter the file path" File_path
+if [ -e "$File_path" ]&&[ -w "$File_path" ]; then
+	echo "File_path exists password are enabled"
+if [ -w "$File_path" ];
+then
+	echo "you have permission to edit "$File_path""
+else
+	echo "you do not have a permission to edit "$File_path""
+fi
+else 
+	echo "$File_path does not exist"
+fi
