@@ -1,0 +1,6 @@
+#!/bin/bash
+ANIMALS=("MAN" "BEAR" "PIG" "DOG" "SHEEP")
+for ((i=0; i<=${#ANIMALS[@]}; i++))
+do 
+	echo "${ANIMALS[i]}"
+done
